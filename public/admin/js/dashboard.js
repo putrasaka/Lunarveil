@@ -233,7 +233,7 @@ async function saveArtwork() {
     story: document.getElementById('form-story').value.trim(),
     story_id: document.getElementById('form-story-id').value.trim(),
     story_en: document.getElementById('form-story-en').value.trim(),
-    image: currentImageBase64 || '/src/assets/images/gambarabdil.jpeg'
+    image: currentImageBase64 || '/images/gambarabdil.jpeg'
   };
 
   if (!formData.title) {
