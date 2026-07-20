@@ -19,7 +19,7 @@ export default function CreativeProcess({ onNavigateToGallery }: CreativeProcess
         ? "Halo! Saya Abdiel Ahnaf, seorang seniman grafis tradisional yang mendedikasikan hidup untuk mengeksplorasi kedalaman emosi, spiritualitas, dan perjalanan hidup manusia melalui medium tinta hitam dan goresan pensil kontemplatif. Karya-karya saya memadukan keindahan monokromatis dengan sentuhan surealisme, menghadirkan sebuah jembatan visual antara realitas fisik dan kedamaian batin. Selamat menjelajahi portofolio mahakarya saya."
         : "Hello! I am Abdiel Ahnaf, a traditional graphic artist dedicated to exploring the depth of human emotions, spirituality, and life journeys through black ink and contemplative pencil strokes. My works combine monochromatic beauty with a touch of surrealism, presenting a visual bridge between physical reality and inner peace. Welcome to my masterpiece portfolio.",
       icon: Paintbrush,
-      image: "/src/assets/images/Abdiel.jpeg",
+      image: "/public/assets/images/Abdiel.jpeg",
       alignLeft: false // Image right, words left
     },
     {
@@ -30,7 +30,7 @@ export default function CreativeProcess({ onNavigateToGallery }: CreativeProcess
         ? "Sebuah karya seni yang baik bukanlah yang paling sempurna secara teknis, melainkan yang mampu mengajak penonton memasuki ruang makna yang diciptakannya. Seorang seniman menuangkan gagasan yang lahir dari pergulatan batinnya, lalu membiarkan penonton menemukan makna mereka sendiri. Di sanalah sebuah karya terus hidup—karena selalu ada sesuatu yang membuat kita berpikir dan merasa bahwa ada seseorang yang pernah mengalami hal yang sama."
         : "A good artwork is not necessarily the most technically flawless, but rather one that invites the viewer to enter the space of meaning it creates. An artist pours out ideas born of inner struggle, and then lets the audience discover their own meaning. There, a work lives on—because there is always something that makes us think and feel that someone has experienced the exact same thing.",
       icon: Sparkles,
-      image: "src/assets/images/IMG-20260717-WA0034.jpg",
+      image: "/public/assets/images/IMG-20260717-WA0034.jpg",
       alignLeft: true // Image left, words right (as requested!)
     },
     {
@@ -41,17 +41,17 @@ export default function CreativeProcess({ onNavigateToGallery }: CreativeProcess
         ? "Setiap detail surealis yang lahir dari genggaman pensil Abdiel menyimpan metafora visual tentang perjalanan hidup dan pergumulan emosi manusia. Melalui medium tradisional yang jujur ini, ia mengajak kita melihat keindahan yang tersembunyi di balik kesederhanaan monokrom."
         : "Every surreal detail born from Abdiel's pencil holds visual metaphors of human life journeys and emotional struggles. Through this honest traditional medium, he invites us to see the beauty hidden behind monochromatic simplicity.",
       icon: Eye,
-      image: "src/assets/images/WhatsApp.jpeg",
+      image: "/public/assets/images/WhatsApp.jpeg",
       alignLeft: false // Image right, words left
     }
   ];
 
   const marqueeImages = [
-    "src/assets/images/IMG-20260717-WA0004.jpg",
-    "src/assets/images/IMG-20260717-WA0005.jpg",
-    "src/assets/images/IMG-20260717-WA0006.jpg",
-    "src/assets/images/IMG-20260717-WA0007.jpg",
-    "src/assets/images/IMG-20260717-WA0034.jpg"
+    "/public/assets/images/IMG-20260717-WA0004.jpg",
+    "/public/assets/images/IMG-20260717-WA0005.jpg",
+    "/public/assets/images/IMG-20260717-WA0006.jpg",
+    "/public/assets/images/IMG-20260717-WA0007.jpg",
+    "/public/assets/images/IMG-20260717-WA0034.jpg"
   ];
 
   // Duplicate for seamless infinite marquee scrolling
