@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-story: "Lora", Georgia, serif;
+  
+  --color-navy: #202940; /* Rich Navy Blue background from Immersive UI theme */
+  --color-wood: #4B4038; /* Earthy Wood accent from Immersive UI theme */
+  --color-wood-light: #5C5047; /* Lighter refined wood color */
+  --color-taupe: #9A8678; /* Elegant Taupe borders and secondary text */
+  --color-sand: #CAAA98; /* Warm Sand highlight and accent buttons */
+  --color-cream: #FDFCFA; /* Pristine off-white text */
+  --color-gold: #D4AF37; /* Metallic leaf accent */
+}
+
+@layer base {
+  body {
+    background-color: #202940;
+    color: #FDFCFA;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  /* Custom elegant scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #202940;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #4B4038;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #CAAA98;
+  }
+}
+
+.font-serif-poetic {
+  font-family: var(--font-serif);
+}
+
+.font-story-narrative {
+  font-family: var(--font-story);
+}
+
+.font-sans-functional {
+  font-family: var(--font-sans);
+}
+
+/* Custom glow effect */
+.glow-sand {
+  text-shadow: 0 0 10px rgba(202, 170, 152, 0.4);
+}
+
+.box-glow-sand {
+  box-shadow: 0 4px 30px rgba(202, 170, 152, 0.12);
+}
+
+/* Frame highlight - styled after high-end professional galleries with rich wood */
+.canvas-frame {
+  border: 12px solid #4B4038;
+  outline: 1px solid #CAAA98;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.7), 0 10px 25px -5px rgba(0,0,0,0.8);
+}
+

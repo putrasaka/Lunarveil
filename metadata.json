@@ -1,0 +1,6 @@
+{
+  "name": "Ruang Kala",
+  "description": "Studio Seni Rupa Aria Wijaya - Sebuah galeri seni rupa digital mewah yang menyajikan mahakarya kurasi, interaksi latar belakang WebGL, saringan karya dinamis, dan sistem akuisisi kolektor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunar Veil — Admin Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="login-wrapper">
+    <div class="login-card">
+      <div class="brand">
+        <h1>Lunar Veil</h1>
+        <p>Admin Panel</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="login-error" id="login-error">
+        Username atau password salah. Silakan coba lagi.
+      </div>
+
+      <form id="login-form" onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Masukkan username" required autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Masukkan password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn-login" id="login-btn">Masuk ke Panel</button>
+      </form>
+
+      <div class="login-footer">
+        &copy; 2026 Lunar Veil Fine Art. All rights reserved.
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script>
+    if (isLoggedIn()) {
+      window.location.href = 'dashboard.html';
+    }
+
+    async function handleLogin(e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const errorEl = document.getElementById('login-error');
+      const loginBtn = document.getElementById('login-btn');
+
+      loginBtn.disabled = true;
+      loginBtn.textContent = 'Memverifikasi...';
+
+      const result = await login(username, password);
+
+      if (result.success) {
+        window.location.href = 'dashboard.html';
+      } else {
+        errorEl.textContent = result.error || 'Username atau password salah.';
+        errorEl.classList.add('show');
+        loginBtn.disabled = false;
+        loginBtn.textContent = 'Masuk ke Panel';
+        setTimeout(() => errorEl.classList.remove('show'), 6000);
+      }
+    }
+  </script>
+</body>
+</html>
