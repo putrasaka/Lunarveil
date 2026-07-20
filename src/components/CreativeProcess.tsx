@@ -19,7 +19,7 @@ export default function CreativeProcess({ onNavigateToGallery }: CreativeProcess
         ? "Halo! Saya Abdiel Ahnaf, seorang seniman grafis tradisional yang mendedikasikan hidup untuk mengeksplorasi kedalaman emosi, spiritualitas, dan perjalanan hidup manusia melalui medium tinta hitam dan goresan pensil kontemplatif. Karya-karya saya memadukan keindahan monokromatis dengan sentuhan surealisme, menghadirkan sebuah jembatan visual antara realitas fisik dan kedamaian batin. Selamat menjelajahi portofolio mahakarya saya."
         : "Hello! I am Abdiel Ahnaf, a traditional graphic artist dedicated to exploring the depth of human emotions, spirituality, and life journeys through black ink and contemplative pencil strokes. My works combine monochromatic beauty with a touch of surrealism, presenting a visual bridge between physical reality and inner peace. Welcome to my masterpiece portfolio.",
       icon: Paintbrush,
-      image: "src/assets/images/Abdiel.jpeg",
+      image: "\\src\\assets\\images\\Abdiel.jpeg",
       alignLeft: false // Image right, words left
     },
     {
