@@ -1,4 +1,4 @@
-const ARTWORKS_API = window.location.origin + '/api/artworks';
+const ARTWORKS_API = (window.ADMIN_API_URL || window.location.origin) + '/api/artworks';
 
 async function initArtworks() {
   try {

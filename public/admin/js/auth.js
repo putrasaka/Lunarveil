@@ -1,6 +1,6 @@
 const AUTH_KEY = 'lunarveil_admin_auth';
 const TOKEN_KEY = 'lunarveil_admin_token';
-const API_BASE = window.location.origin + '/api';
+const API_BASE = (window.ADMIN_API_URL || window.location.origin) + '/api';
 
 async function login(username, password) {
   try {

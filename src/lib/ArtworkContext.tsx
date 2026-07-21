@@ -3,7 +3,7 @@ import { ARTWORKS_DATA } from '../data';
 import { Artwork } from '../types';
 
 const STORAGE_KEY = 'lunarveil_artworks';
-const API_BASE = '/api/artworks';
+const API_BASE = (import.meta.env.VITE_API_URL || '') + '/api/artworks';
 
 interface ArtworkContextProps {
   artworks: Artwork[];
