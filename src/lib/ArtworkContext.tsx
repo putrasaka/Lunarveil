@@ -24,7 +24,6 @@ function loadFromStorage(): Artwork[] {
   } catch {
     // fallback
   }
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(ARTWORKS_DATA));
   return [...ARTWORKS_DATA];
 }
 
@@ -53,20 +52,20 @@ export const ArtworkProvider: React.FC<{ children: React.ReactNode }> = ({ child
     }
   }, []);
 
-  // On mount: fetch from API
+  // On mount: fetch from API, fallback to localStorage
   useEffect(() => {
-    refreshFromAPI();
     async function refreshFromAPI() {
       const apiData = await fetchFromAPI();
       if (apiData) {
         setArtworks(apiData);
       }
     }
+    refreshFromAPI();
   }, []);
 
-  // Poll API every 3 seconds for live updates from admin
+  // Poll API every 5 seconds for live updates from admin
   useEffect(() => {
-    const interval = setInterval(refreshArtworks, 3000);
+    const interval = setInterval(refreshArtworks, 5000);
     return () => clearInterval(interval);
   }, [refreshArtworks]);
 
