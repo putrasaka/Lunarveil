@@ -79,7 +79,7 @@ ${emailMessage}
 This message was sent by:
 Email: ${emailSender}`;
 
-    const recipientEmail = "putrasaka1808@gmail.com";
+    const recipientEmail = "diellll.lines05@gmail.com";
     const emailreal = recipientEmail.trim()
     const mailtoLink = `mailto:${emailreal}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
